@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TopAlbums</string>
+
+    <!--main activity-->
+    <string name="try_again">Try again</string>
+    <string name="no_connection">No connection</string>
+
+    <!--detail activity-->
+    <string name="title_album">Album:</string>
+    <string name="title_artist">Artist:</string>
+    <string name="title_genre">Genre:</string>
+    <string name="title_release_date">Release date:</string>
+    <string name="title_copyright">Copyright:</string>
+    <string name="listen">Listen</string>
+
+    <!--Content descriptions-->
+    <string name="cd_album_art">Album art</string>
+</resources>

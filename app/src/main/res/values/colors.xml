@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222</color>
+    <color name="colorPrimaryDark">#111</color>
+    <color name="colorAccent">#7cf4b6</color>
+
+    <color name="primaryText">#DDD</color>
+    <color name="secondaryText">#AAA</color>
+
+    <color name="activity_background">@color/colorPrimary</color>
+    <color name="list_item_background">#222</color>
+</resources>

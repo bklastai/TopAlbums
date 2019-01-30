@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/cd_album_art"/>
+
+    <TextView
+        android:id="@+id/title_album_name"
+        style="@style/detailItemTitle"
+        android:text="@string/title_album"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_art"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_of_titles"/>
+
+    <TextView
+        android:id="@+id/album_name"
+        style="@style/detailItem"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/album_art"
+        app:layout_constraintLeft_toRightOf="@+id/right_of_titles"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_artist_name"
+        style="@style/detailItemTitle"
+        android:text="@string/title_artist"
+        app:layout_constraintTop_toBottomOf="@+id/title_album_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_of_titles"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        style="@style/detailItem"
+        app:layout_constraintTop_toBottomOf="@+id/album_name"
+        app:layout_constraintLeft_toRightOf="@+id/right_of_titles"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_genre"
+        style="@style/detailItemTitle"
+        android:text="@string/title_genre"
+        app:layout_constraintTop_toBottomOf="@+id/title_artist_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_of_titles"/>
+
+    <TextView
+        android:id="@+id/genre"
+        style="@style/detailItem"
+        app:layout_constraintTop_toBottomOf="@+id/artist_name"
+        app:layout_constraintLeft_toRightOf="@+id/right_of_titles"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_release_date"
+        style="@style/detailItemTitle"
+        android:text="@string/title_release_date"
+        app:layout_constraintTop_toBottomOf="@+id/title_genre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_of_titles"/>
+
+    <TextView
+        android:id="@+id/release_date"
+        style="@style/detailItem"
+        app:layout_constraintTop_toBottomOf="@+id/genre"
+        app:layout_constraintLeft_toRightOf="@+id/right_of_titles"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/title_copyright"
+        style="@style/detailItemTitle"
+        android:text="@string/title_copyright"
+        app:layout_constraintTop_toBottomOf="@+id/title_release_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/right_of_titles"/>
+
+    <TextView
+        android:id="@+id/copyright"
+        style="@style/detailItem"
+        app:layout_constraintTop_toBottomOf="@+id/release_date"
+        app:layout_constraintLeft_toRightOf="@+id/right_of_titles"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/listen"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rect_accent_rounded"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_of_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.3"
+        android:orientation="vertical"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
